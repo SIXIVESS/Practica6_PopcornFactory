@@ -1,4 +1,4 @@
-package mx.itson.edu.practica6
+package mx.edu.potros.practica6
 
 import org.junit.Test
 

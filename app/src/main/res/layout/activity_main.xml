@@ -14,7 +14,7 @@
         android:layout_height="500dp"
         app:srcCompat="@drawable/popcorn"
         android:scaleType="centerCrop"
-        />
+    />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

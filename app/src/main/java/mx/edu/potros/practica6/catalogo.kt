@@ -1,5 +1,4 @@
-package mx.itson.edu.practica6
-
+package mx.edu.potros.practica6
 
 import android.content.Context
 import android.content.Intent
