@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    tools:context=".detalle_pelicula"
     android:background="@color/black"
-    tools:context=".detalle_pelicula">
-    
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <ImageView
-            android:id="@+id/iv_pelicula_image"
+            android:id="@+id/iv_pelicula_imagen"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="350dp"
             app:srcCompat="@drawable/adorabledemonio" />
 
         <TextView
@@ -26,21 +25,22 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:paddingLeft="25dp"
+            android:textColor="@color/yellow"
             android:textSize="20sp"
-            android:text="Adorable Demonio"
             android:layout_gravity="center"
-            android:textColor="@color/yellow"/>
+            android:text="Adorable demonio"/>
 
         <TextView
             android:id="@+id/tv_pelicula_desc"
             android:layout_marginTop="18dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14dp"
             android:paddingHorizontal="25dp"
-            android:text="Se centra en la vida de Jung Koo Won, un temerario demonio que pierde sus poderes tras conocer a Do Do-Hee, una exitosa empresaria con la que deberá de colaborar para recuperarlos."
-            android:textColor="@color/yellow"
-            android:gravity="center"/>
+            android:textSize="14sp"
+            android:text="Aquí descripción de película"
+            android:textColor="@color/yellow"/>
+
+
     </LinearLayout>
 
 </LinearLayout>

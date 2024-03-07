@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/black"
-    android:padding="3pt">
+    android:background="@color/gray"
+    android:padding="3pt"
+    >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/movieCell"
+            android:id="@+id/image_movie_cell"
             android:layout_width="85dp"
             android:layout_height="113dp"
             android:layout_gravity="center"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/adorabledemonio" />
-
+            android:scaleType="fitXY"/>
 
         <TextView
-            android:id="@+id/movieTitleCell"
+            android:id="@+id/movie_title_cell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mi Adorable Demonio"
-            android:textSize="15sp"
-            android:layout_gravity="center"
-            android:fontFamily="sans-serif-light"
             android:textColor="@color/yellow"
-            />
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"/>
+
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>

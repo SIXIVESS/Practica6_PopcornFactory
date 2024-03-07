@@ -4,76 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".catalogo"
+    android:background="@color/gray"
     android:orientation="vertical"
-    android:background="@color/black"
-    tools:context=".catalogo">
+    >
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MOVIES"
-        android:fontFamily="sans-serif-light"
-        android:textAllCaps="true"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/yellow"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"/>
+        android:orientation="horizontal"
+        >
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/yellow"
-        android:textColor="@color/yellow"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="33dp"/>
+        <TextView
+            android:id="@+id/tvMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOVIES"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/yellow"
+            android:layout_marginTop="33dp"
+            android:layout_marginHorizontal="15dp"
+            />
+
     </LinearLayout>
-    
+
     <GridView
-        android:id="@+id/moviesCatalogo"
+        android:id="@+id/movies_catalogo"
         android:layout_width="match_parent"
-        android:layout_height="290dp"
+        android:layout_height="250dp"
         android:numColumns="3"
-        android:layout_marginTop="18dp"
-        android:paddingHorizontal="6dp"/>
-    
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="6dp"
+        />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        
+
         <View
             android:layout_width="250dp"
             android:layout_height="2dp"
-            android:textColor="@color/yellow"
             android:background="@color/yellow"
             android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="33dp" />
+            android:layout_marginTop="33dp"
+            />
         <TextView
+            android:id="@+id/tvSeries"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SERIES"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:textColor="@color/yellow"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"/>
+
     </LinearLayout>
 
     <GridView
-        android:id="@+id/seriesCatalogo"
+        android:id="@+id/mseries_catalogo"
         android:layout_width="match_parent"
-        android:layout_height="290dp"
+        android:layout_height="250dp"
         android:numColumns="3"
         android:layout_marginTop="10dp"
-        android:paddingHorizontal="6dp"/>
+        android:paddingHorizontal="6dp"
+        />
 
 
 </LinearLayout>
